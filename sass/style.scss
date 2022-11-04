@@ -1,3 +1,55 @@
+@import 'placeholder';
+
 html {
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background-color: #000;
+    
+    & a {
+        @extend %link-a-header-pattern;
+        margin: 5px 10px;
+
+        &:hover {
+            color: #FF5200;
+        }
+    }
+    & ul {
+        display: flex;
+        align-items: center;
+
+        & .btn {
+            @extend %btn-pattern;
+            padding: 0.6rem 1rem;
+            margin: 5px 10px;
+        }
+
+        #btn-register {
+            background-color: transparent;
+            border: 1px solid #FFF;
+            transition: .3s;
+
+            &:hover {
+                border: 1px solid #FF5200;
+                color: #FF5200;
+            }   
+        }
+    }
+    .div-link-brand {
+        font-size: 2rem;
+        font-weight: lighter;
+        font-family: 'Lato';
+    }
+    .fa-brain {
+        margin-right: 5px;
+    }
 }
