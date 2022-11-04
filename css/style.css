@@ -44,7 +44,7 @@ html {
   margin: 5px 10px;
 }
 #header a:hover {
-  color: #FF5200;
+  color: #ff5200;
 }
 #header ul {
   display: flex;
@@ -56,12 +56,12 @@ html {
 }
 #header ul #btn-register {
   background-color: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   transition: 0.3s;
 }
 #header ul #btn-register:hover {
-  border: 1px solid #FF5200;
-  color: #FF5200;
+  border: 1px solid #ff5200;
+  color: #ff5200;
 }
 #header .div-link-brand {
   font-size: 2rem;
@@ -70,6 +70,15 @@ html {
 }
 #header .fa-brain {
   margin-right: 5px;
+}
+
+main .section-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/office.jpg);
+  height: 85vh;
+  width: 100%;
+  position: inherit;
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,55 +1,67 @@
-@import 'placeholder';
+@import "placeholder";
 
 html {
-    font-family: 'Lato', sans-serif;
-    scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
 }
 
 #header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background-color: #000;
+
+  & a {
+    @extend %link-a-header-pattern;
+    margin: 5px 10px;
+
+    &:hover {
+      color: #ff5200;
+    }
+  }
+  & ul {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: fixed;
-    box-sizing: border-box;
+
+    & .btn {
+      @extend %btn-pattern;
+      padding: 0.6rem 1rem;
+      margin: 5px 10px;
+    }
+
+    #btn-register {
+      background-color: transparent;
+      border: 1px solid #fff;
+      transition: 0.3s;
+
+      &:hover {
+        border: 1px solid #ff5200;
+        color: #ff5200;
+      }
+    }
+  }
+  .div-link-brand {
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: "Lato";
+  }
+  .fa-brain {
+    margin-right: 5px;
+  }
+}
+
+main {
+  .section-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(/img/office.jpg);
+    height: 85vh;
     width: 100%;
-    padding: 1.5rem 2rem;
-    background-color: #000;
-    
-    & a {
-        @extend %link-a-header-pattern;
-        margin: 5px 10px;
-
-        &:hover {
-            color: #FF5200;
-        }
-    }
-    & ul {
-        display: flex;
-        align-items: center;
-
-        & .btn {
-            @extend %btn-pattern;
-            padding: 0.6rem 1rem;
-            margin: 5px 10px;
-        }
-
-        #btn-register {
-            background-color: transparent;
-            border: 1px solid #FFF;
-            transition: .3s;
-
-            &:hover {
-                border: 1px solid #FF5200;
-                color: #FF5200;
-            }   
-        }
-    }
-    .div-link-brand {
-        font-size: 2rem;
-        font-weight: lighter;
-        font-family: 'Lato';
-    }
-    .fa-brain {
-        margin-right: 5px;
-    }
+    position: inherit;
+    background-position: center;
+    background-size: cover;
+  }
 }
