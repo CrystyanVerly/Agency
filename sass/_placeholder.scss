@@ -1,28 +1,28 @@
 %link-a-header-pattern {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    color: #FFF;
-    transition: .3s;
-    font-family: 'Lato';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  font-family: "Lato";
 
-    &:hover {
-        color: #FF5200;
-    }
+  &:hover {
+    color: #ff5200;
+  }
 }
-
 %btn-pattern {
-    border: 1px solid transparent;
-    transition: .3s;
-    background-color: #FF5200;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  background-color: #ff5200;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
 
-    &:hover {
-        border: 1px solid #FF5200;
-        background-color: transparent;
-        color: #FF5200;
-    }
+  &:hover {
+    border: 1px solid #ff5200;
+    background-color: transparent;
+    color: #ff5200;
+  }
 }

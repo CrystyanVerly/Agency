@@ -3,30 +3,34 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   transition: 0.3s;
   font-family: "Lato";
 }
 #header a:hover {
-  color: #FF5200;
+  color: #ff5200;
 }
 
-#header ul .btn {
+main .section-banner .banner-call a, #header ul #btn-register, #header ul .btn {
+  text-decoration: none;
   border: 1px solid transparent;
   transition: 0.3s;
-  background-color: #FF5200;
+  background-color: #ff5200;
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
 }
-#header ul .btn:hover {
-  border: 1px solid #FF5200;
+main .section-banner .banner-call a:hover, #header ul #btn-register:hover, #header ul .btn:hover {
+  border: 1px solid #ff5200;
   background-color: transparent;
-  color: #FF5200;
+  color: #ff5200;
+}
+
+* {
+  font-family: "Lato", sans-serif;
 }
 
 html {
-  font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -35,23 +39,22 @@ html {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  top: 0;
   box-sizing: border-box;
   width: 100%;
+  height: 87px;
   padding: 1.5rem 2rem;
   background-color: #000;
 }
 #header a {
   margin: 5px 10px;
 }
-#header a:hover {
-  color: #ff5200;
-}
 #header ul {
   display: flex;
   align-items: center;
 }
 #header ul .btn {
-  padding: 0.6rem 1rem;
+  padding: 0.7rem 1rem;
   margin: 5px 10px;
 }
 #header ul #btn-register {
@@ -59,26 +62,50 @@ html {
   border: 1px solid #fff;
   transition: 0.3s;
 }
-#header ul #btn-register:hover {
-  border: 1px solid #ff5200;
-  color: #ff5200;
-}
 #header .div-link-brand {
   font-size: 2rem;
   font-weight: lighter;
-  font-family: "Lato";
 }
 #header .fa-brain {
   margin-right: 5px;
+  height: 36px;
+  width: 32px;
 }
 
+main {
+  margin-top: 87px;
+  position: static;
+}
 main .section-banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/office.jpg);
-  height: 85vh;
+  height: 75vh;
   width: 100%;
-  position: inherit;
   background-position: center;
   background-size: cover;
+  display: flex;
+}
+main .section-banner .banner-call {
+  text-align: center;
+  margin: auto;
+}
+main .section-banner .banner-call h1,
+main .section-banner .banner-call h2 {
+  color: #fff;
+  font-weight: bold;
+}
+main .section-banner .banner-call h2 {
+  font-size: 3rem;
+}
+main .section-banner .banner-call h1 {
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+main .section-banner .banner-call a {
+  color: #fff;
+  margin-top: 1rem;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */
