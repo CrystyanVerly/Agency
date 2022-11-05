@@ -1,0 +1,28 @@
+%link-a-header-pattern {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+    transition: .3s;
+    font-family: 'Lato';
+
+    &:hover {
+        color: #FF5200;
+    }
+}
+
+%btn-pattern {
+    border: 1px solid transparent;
+    transition: .3s;
+    background-color: #FF5200;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+        border: 1px solid #FF5200;
+        background-color: transparent;
+        color: #FF5200;
+    }
+}
