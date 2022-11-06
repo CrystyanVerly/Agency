@@ -1,13 +1,16 @@
 @import "placeholder";
 
+$font-pattern: "Lato", sans-serif;
+
 * {
-  font-family: "Lato", sans-serif;
+  font-family: $font-pattern;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+// SECTION HEADER
 #header {
   display: flex;
   justify-content: space-between;
@@ -51,42 +54,105 @@ html {
   }
 }
 
-main {
+// SECTION PRINCIPAL BANNER
+.section-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/img/office.jpg);
+  height: 76vh;
   margin-top: 87px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  font-family: $font-pattern;
+
+  .banner-call {
+    text-align: center;
+    margin: auto;
+
+    h1,
+    h2 {
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 3px 2px #000;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h1 {
+      font-size: 4rem;
+      margin-top: 2rem;
+    }
+    a {
+      @extend %btn-pattern;
+      color: #fff;
+      margin-top: 1.5rem;
+      border-radius: 2rem;
+      padding: 1rem 1.5rem;
+      display: inline-block;
+    }
+  }
+}
+main {
   position: static;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
 
-  .section-banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(/img/office.jpg);
-    height: 75vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
+  h2 {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  a {
+    @extend %btn-pattern;
+    align-items: center;
+    color: #FFF;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+  }
+
+  // SECTION SERVICES
+  .section-services {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    box-sizing: border-box;
 
-    .banner-call {
-      text-align: center;
-      margin: auto;
+    .services-card {
+      width: 30%;
+      margin: 1%;
+      padding: 2rem;
+      border: 1px solid #CCC;
+      transition: 0.3s;
+      box-sizing: border-box;
+      font-family: $font-pattern;
 
-      h1,
-      h2 {
-        color: #fff;
-        font-weight: bold;
+      &:hover {
+        border: none;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
       }
-      h2 {
-        font-size: 3rem;
-      }
-      h1 {
+
+      .fa-solid {
+        color: #FF5200;
+        display: block;
+        margin: 1rem auto 1.5rem;
         font-size: 4rem;
-        margin-top: 1rem;
       }
-      a {
-        @extend %btn-pattern;
-        color: #fff;
-        margin-top: 1rem;
-        border-radius: 2rem;
-        padding: 1rem 1.5rem;
-        display: inline-block;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        
+      }
+      p {
+        color: #8B8E94;
       }
     }
   }
