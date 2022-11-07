@@ -26,6 +26,13 @@ main a:hover, .section-banner .banner-call a:hover, #header ul #btn-register:hov
   color: #ff5200;
 }
 
+main .div-jobs h2, main h2 {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
 * {
   font-family: "Lato", sans-serif;
 }
@@ -109,27 +116,22 @@ html {
 
 main {
   position: static;
-  padding: 2rem;
+  padding: 2rem 0;
   margin: 2rem 0;
   text-align: center;
 }
-main h2 {
-  display: block;
-  text-align: center;
-  font-weight: bold;
-  font-size: 3rem;
-}
 main a {
   align-items: center;
-  color: #FFF;
+  color: #fff;
   padding: 1rem 1.5rem;
   border-radius: 2rem;
+  margin: 1rem auto;
 }
 main .section-services {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 4rem;
   margin-top: 2rem;
   width: 100%;
   box-sizing: border-box;
@@ -138,7 +140,7 @@ main .section-services .services-card {
   width: 30%;
   margin: 1%;
   padding: 2rem;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   transition: 0.3s;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
@@ -148,7 +150,7 @@ main .section-services .services-card:hover {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 main .section-services .services-card .fa-solid {
-  color: #FF5200;
+  color: #ff5200;
   display: block;
   margin: 1rem auto 1.5rem;
   font-size: 4rem;
@@ -159,7 +161,46 @@ main .section-services .services-card h3 {
   font-weight: bold;
 }
 main .section-services .services-card p {
-  color: #8B8E94;
+  color: #8b8e94;
+}
+main .div-jobs {
+  background-color: #e5eaff;
+  padding: 3rem;
+}
+main .div-jobs h2 {
+  margin-top: 2rem;
+}
+main .div-jobs .container-img-jobs {
+  display: grid;
+  padding: 2rem 0;
+  margin: 0 2%;
+  gap: 1%;
+  height: 415px;
+  grid-template-areas: "img1 img2 img3" "img1 img4 img5";
+}
+main .div-jobs .container-img-jobs .img-jobs {
+  background-position: center;
+  background-size: cover;
+}
+main .div-jobs .container-img-jobs #img1 {
+  background-image: url(/img/job1.jpg);
+  grid-area: img1;
+}
+main .div-jobs .container-img-jobs #img2 {
+  background-image: url(/img/job2.jpg);
+  grid-area: img2;
+}
+main .div-jobs .container-img-jobs #img3 {
+  background-image: url(/img/job3.jpg);
+  grid-area: img3;
+}
+main .div-jobs .container-img-jobs #img4 {
+  background-image: url(/img/job4.jpg);
+  grid-area: img4;
+}
+main .div-jobs .container-img-jobs #img5 {
+  background-image: url(/img/job5.jpg);
+  grid-area: img5;
 }
 
 /*# sourceMappingURL=style.css.map */

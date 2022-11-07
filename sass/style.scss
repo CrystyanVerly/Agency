@@ -95,23 +95,21 @@ html {
 }
 main {
   position: static;
-  padding: 2rem;
+  padding: 2rem 0;
   margin: 2rem 0;
   text-align: center;
 
   h2 {
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 3rem;
+    @extend %h2-pattern;
   }
 
   a {
     @extend %btn-pattern;
     align-items: center;
-    color: #FFF;
+    color: #fff;
     padding: 1rem 1.5rem;
     border-radius: 2rem;
+    margin: 1rem auto;
   }
 
   // SECTION SERVICES
@@ -119,7 +117,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 4rem;
     margin-top: 2rem;
     width: 100%;
     box-sizing: border-box;
@@ -128,7 +126,7 @@ main {
       width: 30%;
       margin: 1%;
       padding: 2rem;
-      border: 1px solid #CCC;
+      border: 1px solid #ccc;
       transition: 0.3s;
       box-sizing: border-box;
       font-family: $font-pattern;
@@ -139,7 +137,7 @@ main {
       }
 
       .fa-solid {
-        color: #FF5200;
+        color: #ff5200;
         display: block;
         margin: 1rem auto 1.5rem;
         font-size: 4rem;
@@ -149,10 +147,56 @@ main {
         font-size: 1.5rem;
         margin-bottom: 1rem;
         font-weight: bold;
-        
       }
       p {
-        color: #8B8E94;
+        color: #8b8e94;
+      }
+    }
+  }
+
+  // SECTION JOBS
+
+  .div-jobs {
+    background-color: #e5eaff;
+    padding: 3rem;
+
+    h2 {
+      @extend %h2-pattern;
+      margin-top: 2rem;
+    }
+
+    .container-img-jobs {
+      display: grid;
+      padding: 2rem 0;
+      margin: 0 2%;
+      gap: 1%;
+      height: 415px;
+      grid-template-areas:
+        "img1 img2 img3"
+        "img1 img4 img5";
+      .img-jobs {
+        background-position: center;
+        background-size: cover;
+      }
+      #img1 {
+        background-image: url(/img/job1.jpg);
+        grid-area: img1;
+      }
+      #img2 {
+        background-image: url(/img/job2.jpg);
+        grid-area: img2;
+      }
+      #img3 {
+        background-image: url(/img/job3.jpg);
+        grid-area: img3;
+      }
+      #img4 {
+        background-image: url(/img/job4.jpg);
+        grid-area: img4;
+      }
+      #img5 {
+        background-image: url(/img/job5.jpg);
+        grid-area: img5;
       }
     }
   }
