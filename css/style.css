@@ -33,8 +33,17 @@ main .div-jobs h2, main h2 {
   font-size: 3rem;
 }
 
+main .div-jobs .container-img-jobs .img-jobs p, main .div-jobs .container-img-jobs .img-jobs .bg-color:hover p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  padding: 3rem 1rem 1rem;
+  transition: 0.5s;
+}
+
 * {
   font-family: "Lato", sans-serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -174,13 +183,36 @@ main .div-jobs .container-img-jobs {
   display: grid;
   padding: 2rem 0;
   margin: 0 2%;
-  gap: 1%;
-  height: 415px;
+  gap: 15px;
+  height: 500px;
   grid-template-areas: "img1 img2 img3" "img1 img4 img5";
 }
 main .div-jobs .container-img-jobs .img-jobs {
   background-position: center;
   background-size: cover;
+  cursor: pointer;
+  border: 3px solid #e5eaff;
+  transition: 0.5s;
+}
+main .div-jobs .container-img-jobs .img-jobs:hover {
+  border-color: #ff5200;
+}
+main .div-jobs .container-img-jobs .img-jobs .bg-color {
+  height: 100%;
+}
+main .div-jobs .container-img-jobs .img-jobs .bg-color:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+main .div-jobs .container-img-jobs .img-jobs p {
+  color: transparent;
+}
+main .div-jobs .container-img-jobs .img-jobs .holver-job-title {
+  font-size: 2.2rem;
+  padding-top: 4rem;
+  font-weight: bold;
+}
+main .div-jobs .container-img-jobs .img-jobs .holver-job-description {
+  font-size: 0.9rem;
 }
 main .div-jobs .container-img-jobs #img1 {
   background-image: url(/img/job1.jpg);

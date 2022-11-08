@@ -4,6 +4,7 @@ $font-pattern: "Lato", sans-serif;
 
 * {
   font-family: $font-pattern;
+  box-sizing: border-box;
 }
 
 html {
@@ -169,14 +170,45 @@ main {
       display: grid;
       padding: 2rem 0;
       margin: 0 2%;
-      gap: 1%;
-      height: 415px;
+      gap: 15px;
+      height: 500px;
       grid-template-areas:
         "img1 img2 img3"
         "img1 img4 img5";
+
       .img-jobs {
         background-position: center;
         background-size: cover;
+        cursor: pointer;
+        border: 3px solid #e5eaff;
+        transition: 0.5s;
+
+        &:hover {
+          border-color: #ff5200;
+        }
+        .bg-color {
+          height: 100%;
+
+          &:hover {
+            background: rgba(0, 0, 0, 0.6);
+            p {
+              @extend %p-pattern-jobs;
+            }
+          }
+        }
+        p {
+          @extend %p-pattern-jobs;
+          color: transparent;
+        }
+        .holver-job-title {
+          font-size: 2.2rem;
+          padding-top: 4rem;
+          // padding-bottom: 0;
+          font-weight: bold;
+        }
+        .holver-job-description {
+          font-size: 0.9rem;
+        }
       }
       #img1 {
         background-image: url(/img/job1.jpg);
