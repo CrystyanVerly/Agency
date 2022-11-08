@@ -34,11 +34,17 @@ main .div-jobs h2, main h2 {
 }
 
 main .div-jobs .container-img-jobs .img-jobs p, main .div-jobs .container-img-jobs .img-jobs .bg-color:hover p {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Lato", sans-serif;
   padding: 3rem 1rem 1rem;
   transition: 0.5s;
+}
+
+footer .div-footer-hug-back .useful-links ul h3, footer .div-footer-hug-back .footer-description h3 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 * {
@@ -125,8 +131,8 @@ html {
 
 main {
   position: static;
-  padding: 2rem 0;
-  margin: 2rem 0;
+  padding: 2rem 0 0;
+  margin: 2rem 0 0;
   text-align: center;
 }
 main a {
@@ -184,7 +190,7 @@ main .div-jobs .container-img-jobs {
   padding: 2rem 0;
   margin: 0 2%;
   gap: 15px;
-  height: 500px;
+  height: 100%;
   grid-template-areas: "img1 img2 img3" "img1 img4 img5";
 }
 main .div-jobs .container-img-jobs .img-jobs {
@@ -233,6 +239,55 @@ main .div-jobs .container-img-jobs #img4 {
 main .div-jobs .container-img-jobs #img5 {
   background-image: url(/img/job5.jpg);
   grid-area: img5;
+}
+
+footer {
+  padding: 5rem 2rem;
+  background-color: #1d1d1d;
+  color: #8b8e94;
+}
+footer .div-footer-hug-back {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Lato", sans-serif;
+  margin: 0 17%;
+}
+footer .div-footer-hug-back .footer-description {
+  display: inline-block;
+  width: 50%;
+}
+footer .div-footer-hug-back .footer-description h3 {
+  font-size: 1.3rem;
+}
+footer .div-footer-hug-back .footer-description p {
+  line-height: 1.3;
+  width: 80%;
+}
+footer .div-footer-hug-back .useful-links {
+  display: flex;
+  width: 50%;
+}
+footer .div-footer-hug-back .useful-links ul {
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+footer .div-footer-hug-back .useful-links ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  line-height: 1.3;
+  transition: 0.5s;
+}
+footer .div-footer-hug-back .useful-links ul li:hover {
+  color: #fff;
+}
+footer .div-footer-hug-back .div-copyright {
+  display: block;
+  bottom: 0;
+  margin-top: 3rem;
+  width: 100%;
+}
+footer .div-footer-hug-back .div-copyright p {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
