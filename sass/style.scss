@@ -192,6 +192,7 @@ main {
 
           &:hover {
             background: rgba(0, 0, 0, 0.6);
+
             p {
               @extend %p-pattern-jobs;
             }
@@ -235,7 +236,7 @@ main {
 }
 
 // FOOTER
-footer {
+#div-footer {
   padding: 5rem 2rem;
   background-color: #1d1d1d;
   color: #8b8e94;

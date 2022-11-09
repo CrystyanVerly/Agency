@@ -41,7 +41,7 @@ main .div-jobs .container-img-jobs .img-jobs p, main .div-jobs .container-img-jo
   transition: 0.5s;
 }
 
-footer .div-footer-hug-back .useful-links ul h3, footer .div-footer-hug-back .footer-description h3 {
+#div-footer .div-footer-hug-back .useful-links ul h3, #div-footer .div-footer-hug-back .footer-description h3 {
   color: #fff;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -241,52 +241,52 @@ main .div-jobs .container-img-jobs #img5 {
   grid-area: img5;
 }
 
-footer {
+#div-footer {
   padding: 5rem 2rem;
   background-color: #1d1d1d;
   color: #8b8e94;
 }
-footer .div-footer-hug-back {
+#div-footer .div-footer-hug-back {
   display: flex;
   flex-wrap: wrap;
   font-family: "Lato", sans-serif;
   margin: 0 17%;
 }
-footer .div-footer-hug-back .footer-description {
+#div-footer .div-footer-hug-back .footer-description {
   display: inline-block;
   width: 50%;
 }
-footer .div-footer-hug-back .footer-description h3 {
+#div-footer .div-footer-hug-back .footer-description h3 {
   font-size: 1.3rem;
 }
-footer .div-footer-hug-back .footer-description p {
+#div-footer .div-footer-hug-back .footer-description p {
   line-height: 1.3;
   width: 80%;
 }
-footer .div-footer-hug-back .useful-links {
+#div-footer .div-footer-hug-back .useful-links {
   display: flex;
   width: 50%;
 }
-footer .div-footer-hug-back .useful-links ul {
+#div-footer .div-footer-hug-back .useful-links ul {
   box-sizing: border-box;
   padding: 0 1rem;
 }
-footer .div-footer-hug-back .useful-links ul li {
+#div-footer .div-footer-hug-back .useful-links ul li {
   margin-bottom: 0.5rem;
   cursor: pointer;
   line-height: 1.3;
   transition: 0.5s;
 }
-footer .div-footer-hug-back .useful-links ul li:hover {
+#div-footer .div-footer-hug-back .useful-links ul li:hover {
   color: #fff;
 }
-footer .div-footer-hug-back .div-copyright {
+#div-footer .div-footer-hug-back .div-copyright {
   display: block;
   bottom: 0;
   margin-top: 3rem;
   width: 100%;
 }
-footer .div-footer-hug-back .div-copyright p {
+#div-footer .div-footer-hug-back .div-copyright p {
   margin-bottom: 1rem;
 }
 
